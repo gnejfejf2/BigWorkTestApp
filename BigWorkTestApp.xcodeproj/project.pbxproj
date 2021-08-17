@@ -30,6 +30,7 @@
 		7E07278726C66A5A000F4793 /* ProccesingEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E07278626C66A5A000F4793 /* ProccesingEnum.swift */; };
 		7E07278E26CA4D18000F4793 /* CompletedCampaignCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E07278C26CA4D18000F4793 /* CompletedCampaignCell.swift */; };
 		7E07278F26CA4D18000F4793 /* CompletedCampaignCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E07278D26CA4D18000F4793 /* CompletedCampaignCell.xib */; };
+		7E07279126CC1638000F4793 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E07279026CC1638000F4793 /* StringExtension.swift */; };
 		835EB257F4FB8243514DB820 /* Pods_BigWorkTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299C25C0092987AA1F6DCD34 /* Pods_BigWorkTestApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		7E07278626C66A5A000F4793 /* ProccesingEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProccesingEnum.swift; sourceTree = "<group>"; };
 		7E07278C26CA4D18000F4793 /* CompletedCampaignCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedCampaignCell.swift; sourceTree = "<group>"; };
 		7E07278D26CA4D18000F4793 /* CompletedCampaignCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompletedCampaignCell.xib; sourceTree = "<group>"; };
+		7E07279026CC1638000F4793 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		C4882A868DA048C71BE77A78 /* Pods-BigWorkTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigWorkTestApp.debug.xcconfig"; path = "Target Support Files/Pods-BigWorkTestApp/Pods-BigWorkTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,6 +162,7 @@
 		7E07276226C625CA000F4793 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				7E07276C26C62775000F4793 /* ServerManager.swift */,
 				7E07276526C6271B000F4793 /* CampaignService.swift */,
 				7E07276726C6273A000F4793 /* HttpRouter.swift */,
 				7E07276926C62756000F4793 /* HttpService.swift */,
@@ -171,7 +174,6 @@
 		7E07276B26C62766000F4793 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				7E07276C26C62775000F4793 /* ServerManager.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				7E07278326C666D0000F4793 /* DateExtension.swift */,
+				7E07279026CC1638000F4793 /* StringExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				7E07275026C62515000F4793 /* ViewController.swift in Sources */,
 				7E07277426C62CF0000F4793 /* CustomError.swift in Sources */,
 				7E07274C26C62515000F4793 /* AppDelegate.swift in Sources */,
+				7E07279126CC1638000F4793 /* StringExtension.swift in Sources */,
 				7E07278726C66A5A000F4793 /* ProccesingEnum.swift in Sources */,
 				7E07274E26C62515000F4793 /* SceneDelegate.swift in Sources */,
 				7E07276A26C62756000F4793 /* HttpService.swift in Sources */,

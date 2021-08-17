@@ -69,53 +69,5 @@ class CampaignCellView: UICollectionViewCell {
 }
 
 
-extension String {
-    
-    func stringToDate() -> Date?{
-        
 
-        let dateFormatter = DateFormatter()
 
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
-        dateFormatter.locale = Locale(identifier: "ko_KR")
-        dateFormatter.timeZone = TimeZone(abbreviation: "KST")
-        let date : Date? = dateFormatter.date(from: self)
-        
-        return date
-    }
-    
-}
-
-extension Date {
-    
-    func nowTimeDif() -> Bool {
-
-        return self > nowKoreaTime()
-    }
-    
-    func nowKoreaTime() -> Date {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
-        var nowTime = Date()
-        //시차가안맞아서 9시간더해줌
-        nowTime.addTimeInterval(32400)
-     
-        let date = dateFormatter.date(from: dateFormatter.string(from: nowTime))
-    
-  
-        
-        return date!
-    }
-    
-}
-
-extension UIImage {
-
-    func alpha(_ value:CGFloat) -> UIImage {
-        UIGraphicsBeginImageContextWithOptions(size, false, scale)
-        draw(at: CGPoint.zero, blendMode: .normal, alpha: value)
-        let newImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return newImage!
-    }
-}
